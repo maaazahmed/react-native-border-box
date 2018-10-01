@@ -12,17 +12,24 @@ export default class Game extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.boxContainer} ></View>
+                <View style={styles.boxContainer} >
+
+                </View>
+
+
                 <View style={styles.statusContainer}>
 
-                    <View style={{ flex: 1, backgroundColor: "white", borderColor:"green", borderWidth:1 }} >
-
-
-
-                    
+                    <View style={{ flex: 1, justifyContent: "flex-end", alignItems: "center", justifyContent: "center" }} >
+                        <View>
+                            <Text style={{ fontSize: 18, color: "#f0a951", fontWeight: "bold" }} >40</Text>
+                        </View>
+                        <View>
+                            <Text style={{ fontSize: 18, color: "#f0a951", fontWeight: "bold" }} >player 1</Text>
+                        </View>
+                        <View style={{ width: "90%", borderColor: "#fff", borderWidth: 0, height: 20, marginTop: 10 }} >
+                            <View style={{ backgroundColor: "#f0a951", height: 100, width: 60 }} ></View>
+                        </View>
                     </View>
-
-
                     <View style={styles.buttonContainer}>
                         <View style={styles.UpButtonContent}>
                             <TouchableOpacity
@@ -39,7 +46,7 @@ export default class Game extends Component {
                             <TouchableOpacity
                                 activeOpacity={0.6}
                                 style={styles.cancelButn}>
-                                <Text style={[styles.buttonText, { color: "#250b02", fontSize: 20 }]} >X</Text>
+                                <Text style={[styles.buttonText, { color: "#250b02", fontSize: 25 }]} >X</Text>
                             </TouchableOpacity>
 
                             <TouchableOpacity
@@ -59,7 +66,18 @@ export default class Game extends Component {
                     </View>
 
 
-                    <View style={{ flex: 1, backgroundColor: "white" }}></View>
+                    <View style={{ flex: 1, justifyContent: "flex-end", alignItems: "center", justifyContent: "center" }} >
+                        <View>
+                            <Text style={{ fontSize: 18, color: "#f0a951", fontWeight: "bold" }} >60</Text>
+                        </View>
+                        <View>
+                            <Text style={{ fontSize: 18, color: "#f0a951", fontWeight: "bold" }} >player 2</Text>
+                        </View>
+                        <View style={{ width: "90%", borderColor: "#fff", borderWidth: 0, height: 20, alignItems: "flex-end", marginTop: 10 }} >
+                            <View style={{ backgroundColor: "#f0a951", height: 100, width: 60 }} ></View>
+                        </View>
+                    </View>
+
 
                 </View>
             </View>
@@ -74,13 +92,13 @@ const styles = StyleSheet.create({
     },
     boxContainer: {
         backgroundColor: "#f0a951",
-        // flex: 5,
-        height:"80%"
+        height: "80%",
+
     },
     statusContainer: {
         backgroundColor: "#250b02",
         flex: 1,
-        height:"20%",
+        height: "20%",
         display: "flex",
         justifyContent: "space-between",
         flexDirection: "row",
@@ -94,7 +112,7 @@ const styles = StyleSheet.create({
         borderColor: "#f0a951",
         borderWidth: 1,
         padding: 5,
-        borderRadius: 100,
+        // borderRadius: 100,
         // width:"90%",
         // marginLeft: "8%",
         // marginRight: "8%"
@@ -134,7 +152,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "flex-end",
-        marginRight:5
+        marginRight: 5
     },
 
     leftButton: {
@@ -142,7 +160,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         // alignItems: "center",
         alignItems: "flex-start",
-        marginLeft:5
+        marginLeft: 5
 
     },
 
@@ -153,7 +171,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
 
-    cancelButn:{
+    cancelButn: {
         backgroundColor: "#f0a951",
         flex: 1,
         justifyContent: "center",
