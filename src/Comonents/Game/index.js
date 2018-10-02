@@ -255,10 +255,6 @@ const styles = StyleSheet.create({
         borderColor: "#f0a951",
         borderWidth: 1,
         padding: 5,
-        // borderRadius: 100,
-        // width:"90%",
-        // marginLeft: "8%",
-        // marginRight: "8%"
     },
 
     UpButtonContent: {
@@ -321,27 +317,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         width: "50%",
         height: "70%",
-        // paddingTop: 22,
-        // paddingBottom: 22,
-        // paddingLeft: 10,
-        // paddingRight: 10,
         borderRadius: 1000,
-        // borderColor: "#f0a951",
-        // borderWidth: 1,
     }
 
 });
-
-
-
- // let rows = [];
-        // for (var i = 0; i < 10; i++){
-        //   let rowID = `row${i}`
-        //   let cell = []
-        //   for (var idx = 0; idx < 10; idx++){
-        //     let cellID = `cell${i}-${idx}`
-        //     cell.push(<TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }} key={cellID} id={cellID}></TouchableOpacity>)
-        //   }
-        //   rows.push(<View key={i} style={{ width: "90%", height: 45, flexDirection: "row", }}   
-        //   id={rowID}>{cell}</View>)
-        // }
