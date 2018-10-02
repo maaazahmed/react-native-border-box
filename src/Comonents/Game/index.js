@@ -3,22 +3,45 @@ import {
     StyleSheet,
     View,
     Text,
-    TouchableOpacity
+    TouchableOpacity,
+    Dimensions
 } from 'react-native';
-import Icon from "react-native-vector-icons/FontAwesome"
+// import Icon from "react-native-vector-icons/FontAwesome"
+import Icons from 'react-native-vector-icons/dist/FontAwesome';
 
-
+const { } = Dimensions
 export default class Game extends Component {
     render() {
+        let arr = []
+        for (var i = 0; i < 10; i++) {
+            arr.push(
+                <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
+                    <TouchableOpacity  activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                    <TouchableOpacity  activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                    <TouchableOpacity  activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                    <TouchableOpacity  activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                    <TouchableOpacity  activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                    <TouchableOpacity  activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                    <TouchableOpacity  activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                    <TouchableOpacity  activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                    <TouchableOpacity  activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                    <TouchableOpacity  activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                </View>
+            )
+        }
         return (
             <View style={styles.container}>
-                <View style={styles.boxContainer} >
 
+
+
+                <View style={styles.boxContainer} >
+                    <View style={{backgroundColor:"#250b02", padding:10, borderRadius:10}} >
+                        {arr}
+                    </View>
                 </View>
 
 
                 <View style={styles.statusContainer}>
-
                     <View style={{ flex: 1, justifyContent: "flex-end", alignItems: "center", justifyContent: "center" }} >
                         <View>
                             <Text style={{ fontSize: 18, color: "#f0a951", fontWeight: "bold" }} >40</Text>
@@ -47,6 +70,7 @@ export default class Game extends Component {
                                 activeOpacity={0.6}
                                 style={styles.cancelButn}>
                                 <Text style={[styles.buttonText, { color: "#250b02", fontSize: 25 }]} >X</Text>
+                                {/* <Icons name="redo-alt" /> */}
                             </TouchableOpacity>
 
                             <TouchableOpacity
@@ -93,6 +117,8 @@ const styles = StyleSheet.create({
     boxContainer: {
         backgroundColor: "#f0a951",
         height: "80%",
+        justifyContent: "center",
+        alignItems: "center"
 
     },
     statusContainer: {
