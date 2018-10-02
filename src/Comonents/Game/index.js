@@ -6,8 +6,7 @@ import {
     TouchableOpacity,
     Dimensions
 } from 'react-native';
-// import Icon from "react-native-vector-icons/FontAwesome"
-import Icons from 'react-native-vector-icons/dist/FontAwesome';
+
 
 const { } = Dimensions
 export default class Game extends Component {
