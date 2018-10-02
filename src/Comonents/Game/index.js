@@ -12,27 +12,31 @@ import Icons from 'react-native-vector-icons/dist/FontAwesome';
 const { } = Dimensions
 export default class Game extends Component {
 
+    selectBox(ind) {
+        console.log(ind)
+
+    }
 
 
-    
+
     render() {
-        let arr = []
-        for (var i = 0; i < 10; i++) {
-            arr.push(
-                <View key={i} style={{ width: "90%", height: 45, flexDirection: "row", }} >
-                    <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-                </View>
-            )
-        }
+        // let arr = []
+        // for (var i = 0; i < 1; i++) {
+        //     arr.push(
+        //         <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
+        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+        //         </View>
+        //     )
+        // }
         return (
             <View style={styles.container}>
 
@@ -40,7 +44,111 @@ export default class Game extends Component {
 
                 <View style={styles.boxContainer} >
                     <View style={{ backgroundColor: "#250b02", padding: 10, borderRadius: 10 }} >
-                        {arr}
+                        <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 1)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 2)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 3)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 4)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 5)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 6)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 7)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 8)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 9)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 10)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                        </View>
+
+                         <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 11)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 12)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 13)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 14)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 15)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 16)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 17)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 18)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 19)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 20)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                        </View>
+
+                         <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 21)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 22)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 23)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 24)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 25)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 26)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 27)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 28)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 29)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 30)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                        </View>
+
+                          <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 31)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 32)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 33)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 34)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 35)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 36)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 37)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 38)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 39)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 40)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                        </View>
+
+                          <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 41)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 42)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 43)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 44)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 45)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 46)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 47)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 48)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 49)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 50)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                        </View>
+
+                          <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 51)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 52)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 53)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 54)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 55)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 56)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 57)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 58)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 59)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 60)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                        </View>
+
+                         <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 61)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 62)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 63)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 64)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 65)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 66)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 67)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 68)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 69)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 70)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                        </View>
+
+                         <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 61)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 62)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 63)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 64)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 65)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 66)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 67)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 68)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 69)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                            <TouchableOpacity onPress={this.selectBox.bind(this, 70)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
+                        </View>
+
+
                     </View>
                 </View>
 
@@ -218,3 +326,17 @@ const styles = StyleSheet.create({
     }
 
 });
+
+
+
+ // let rows = [];
+        // for (var i = 0; i < 10; i++){
+        //   let rowID = `row${i}`
+        //   let cell = []
+        //   for (var idx = 0; idx < 10; idx++){
+        //     let cellID = `cell${i}-${idx}`
+        //     cell.push(<TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }} key={cellID} id={cellID}></TouchableOpacity>)
+        //   }
+        //   rows.push(<View key={i} style={{ width: "90%", height: 45, flexDirection: "row", }}   
+        //   id={rowID}>{cell}</View>)
+        // }
