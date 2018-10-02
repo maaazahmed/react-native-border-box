@@ -20,28 +20,8 @@ export default class Game extends Component {
 
 
     render() {
-        // let arr = []
-        // for (var i = 0; i < 1; i++) {
-        //     arr.push(
-        //         <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
-        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-        //             <TouchableOpacity onPress={this.selectBox.bind(this)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
-        //         </View>
-        //     )
-        // }
         return (
             <View style={styles.container}>
-
-
-
                 <View style={styles.boxContainer} >
                     <View style={{ backgroundColor: "#250b02", padding: 10, borderRadius: 10 }} >
                         <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
@@ -56,7 +36,6 @@ export default class Game extends Component {
                             <TouchableOpacity onPress={this.selectBox.bind(this, 9)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
                             <TouchableOpacity onPress={this.selectBox.bind(this, 10)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
                         </View>
-
                          <View style={{ width: "90%", height: 45, flexDirection: "row", }} >
                             <TouchableOpacity onPress={this.selectBox.bind(this, 11)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
                             <TouchableOpacity onPress={this.selectBox.bind(this, 12)} activeOpacity={0.6} style={{ backgroundColor: "#f0a951", width: "10%", height: "100%", borderColor: "#250b02", borderWidth: 1 }}></TouchableOpacity>
